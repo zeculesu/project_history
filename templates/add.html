@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adding persons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<h1>Форма для добавления данных</h1>
+<div>
+    <form class="login_form" method="post" enctype="multipart/form-data">
+        <input type="text" class="form-control" id="text" placeholder="Введите ФИО" name="name">
+        <div class="form-group">
+            <label for="classSelect">Выберите статус</label>
+            <select class="form-control" id="classSelect" name="status">
+                <option>студент</option>
+                <option>преподаватель</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="about">Биография</label>
+            <textarea class="form-control" id="about" rows="3" name="bio"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="photo">Выберите файл</label>
+            <input type="file" class="form-control-file" id="photo" name="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Записать</button>
+    </form>
+</div>
+</body>
+</html>
